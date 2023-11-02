@@ -1,0 +1,36 @@
+1. How to convet an Object into an array
+1.1 Convert object key to Array :- Object.keys(Object_name)
+1.2 COnvert object values to Array :- Oject.values(Object_name)
+1.2 Convert full object into Array :- Object.entries(Object_name)// It will give you and 2d Array
+
+2. Fetching database items in realtime using "onValue"
+2.1 First import onValue in your code using  the firebase/database link
+2.2 Then you have to use onValue to call your database reference where you are storing the data 
+2.2 Then you have to make function to console the database items
+2.3 Example :- onValue(booksInDB, function(snapshot) {
+    let booksArray = Object.values(snapshot.val())// this is use to convert the object values in form an array
+    //then we are console.log out the array of the database items we stored
+    
+    console.log(booksArray)
+})
+
+3. flex-wrap (VI)
+3.1 The flex-wrap property specifies whether the flexible items should wrap or not.
+3.2 Value-------->Description	(property value of flex-wrap)
+    nowrap------->Default value. Specifies that the flexible items will not wrap	
+    wrap--------->Specifies that the flexible items will wrap if necessary	
+    wrap-reverse-->Specifies that the flexible items will wrap, if necessary, in reverse order
+    initial------->Sets this property to its default value. Read about initial	
+    inherit------->Inherits this property from its parent element.    
+3.3 Synatax :- flex-wrap: nowrap|wrap|wrap-reverse|initial|inherit;    
+3.4 Note: If the elements are not flexible items, the flex-wrap property has no effect.
+
+4. gap css tag (VI)
+4.1 The gap property defines the size of the gap between the rows and between the columns in flexbox, grid or multi-column layout. 
+    It is a shorthand for the following properties:
+    4.1.1row-gap
+    4.1.2column-gap
+4.2  Synatax :- gap: row-gap column-gap|initial|inherit;
+
+5. You have noticed each time you open a  web page you we will see a icon on left side of your screen where the html link is there this 
+icon is called "Favicon" you can generate it by using "Favicon.io"(Very Important)

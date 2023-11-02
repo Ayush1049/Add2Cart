@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            Add to Cart
+        </title>
+        <!-- Now we have to make this web app mobile screen friendly so that the web app screen does not misfit the mobile screen -->
+        <!-- For this we are using meta viewport to set our resolution -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Its going to work on each type of mobile device  -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <!-- Above 4 links are favicon links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        <!-- This type ="module" which we are adding in script it is because we can import new mmodules outside from our app -->
+        <script src="index.js" type="module"></script>
+    </head>
+    <body>
+        <div class="container">
+            <img src="icon.png">
+            <input type="text" id="input-field">
+            <button type="submit" id="add">Add to Cart</button>
+            <ul id="item"></ul>
+        </div>
+    </body>
+</html>
